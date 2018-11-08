@@ -1,0 +1,266 @@
+1.
+
+   HTTP Methods:The following are the http methods
+   GET,POST,PUT,HEAD,DELETE,PATCH
+
+   GET is used to request data from a specified resource.
+   GET is one of the most common HTTP methods, most used.
+
+   POST is used to send data to a server to create/update a resource , most used.
+
+   PUT is used to send data to a server to create/update a resource.
+
+   difference between put and post:---
+   PUT requests are idempotent.
+   Calling the same PUT request multiple times will always gives the same result. 
+
+   In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+
+   The DELETE method deletes the specified resource.
+   PATCH : When we're doing a partial update, can use HTTP PATCH.
+
+
+2.
+   HTTP RESPONSE CODES:there are five types of response codes
+
+   1xx: Informational
+   It means that request was received and the process is continuing.
+
+   2xx: Success
+   It means that action was successfully received, understood, and accepted.
+
+   3xx: Redirection
+   It says that further action must be taken in order to complete the request.
+
+   4xx: Client Error
+   It means the request contains incorrect syntax or cannot be fulfilled.
+
+   5xx: Server Error: the server failed to fulfill an apparently valid request.
+
+
+3.
+   CONTENT DELIVERY NETWORKS:
+
+   a system of computers (computing devices)
+   networked together (across the Internet)to deliver content to end users,
+   in order to improve performance, scalability, and cost
+   efficiency.
+
+   Advantages:why we need CDN ?
+
+   Reduce (backbone) bandwidth costs
+   Improve end user performance
+   Shorter latency / response quickly, 
+   Less delay jitter
+
+   Higher bandwidth
+
+   Increase global availability of content
+
+4.
+   MEAN Stack:
+
+   MEAN is actually combination of 3 JavaScript frameworks and a NoSQL.
+
+   M is for MongoDB:data in MongoDB JSON-like documents with dynamic schemas.
+
+   E is for ExpressJS: combined with nodes.js
+
+   A is for AngularJS: AngularJS is a structural framework for dynamic web apps.
+
+   N is for NodeJS: Node.js is an open-source, cross-platform runtime environment for developing server-side web applications.
+
+   Node.js applications are written in JavaScript and can be run within the Node.js runtime on OS X, 
+
+   MEAN stack refers to a collection of JavaScript based technologies used to develop web applications. 
+
+   MEAN is an acronym for MongoDB, ExpressJS, AngularJS and Node.js.
+   Starting From client to server to database,
+   MEAN is full stack JavaScript.
+
+5.
+   Single and multithread:
+
+   That means that a thread is a simple flow of instruction.
+ 
+   An application can be single threaded (it as a single line going from the entry point of the application to its end)
+ 
+   or multi-threaded (the whole app starts from 1 point, than it branches out more and more).
+ 
+   Multi-threaded applications can do a lot more things than single threaded ones and they do them faster.
+
+6.
+   Idempotence:
+
+   For an operation (or service call) to be idempotent, clients can make that same call repeatedly while producing the same result. In other words, making multiple identical requests has the same effect as making a single request. 
+   Note that while idempotent operations produce the same result on the server (no side effects), the response itself may not be the same (e.g. a resource's state may change between requests).
+   The PUT and DELETE methods are defined to be idempotent. 
+   The problem with DELETE, which if successful would normally return a 200 or 204 (No Content)or 404 (Not Found) on subsequent calls, unless the service is configured to "mark" resources for deletion without actually deleting them. 
+   However, when the service actually deletes the resource, the next call will not find the resource to delete it and return a 404.
+   However, the state on the server is the same after each DELETE call, but the response is different.
+   GET, HEAD, OPTIONS and TRACE methods are defined as safe, meaning they are only intended for retrieving data. This makes them idempotent as well since multiple, identical requests will behave the same.
+   where as POST is not safe.      
+   PUT requests are idempotent.Calling the same PUT request multiple times will always gives the same result. 
+   In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+
+
+7.
+   Why Node.js?
+
+   Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine).
+ 
+   Node.js applications are written in JavaScript, and can be run with in the Node.js runtime on OS X, Microsoft Windows, and Linux.
+
+   ****Asynchronous and Event Driven,Fast,Single Threaded but Highly Scalable, no buffering etc are advantages of node.js.
+
+8.
+
+   Synchronous vs asynchronous languages:
+
+   Synchronous languages:
+   Your program starts at the first line of source code and each line of code executed sequentially thereafter in Synchronous languages.
+
+   Your program is executed line by line, one line at a time. 
+   Each time a function is called, program execution waits until that function returns before continuing to the next line of code.
+   ex: javascript
+
+   Asynchronous languages:
+   Asynchronous execution avoids this bottleneck problems. 
+   You are essentially saying, “I know this function call is going to take a great deal of time, but my program doesn’t want to wait around while it executes.”
+   ex:flex, node.js
+
+
+9.
+
+   Multiprogramming – 
+   A computer running more than one program at a time (like running Excel and Firefox simultaneously).
+
+   Multitasking – Tasks sharing a common resource (like using 1 CPU).
+
+
+   Multithreading is an extension of multitasking.A thread is a basic unit of CPU utilization.
+
+   ex:VLC media player, where one thread is used for opening the VLC media player, one thread for playing a particular song and another thread for adding new songs to the playlist.
+
+
+   Multiprocessing ::=  use of two or more CPUs (processors) within a single Computer system. 
+   This term also refers to the ability of a system to support more than one processor within a single computer system.
+
+   ex: dual core,multicore processors...
+
+10.
+
+   v8 engine:
+
+   v8 is a powerful open source Javascript engine provided by Google. 
+   what is Javascript Engine?
+ 
+   It is a program that converts Javascript code into  machine code.
+
+   ex: JavaScript engines are Rhino, JavaScriptCore, and SpiderMonkey.
+
+   v8 engine is written in C++ and used in Chrome and Nodejs.
+   It implements ECMAScript as specified in ECMA-262.
+
+   The V8 engine can run standalone we can embed it with our own C++ program.
+
+   V8 can run standalone and  we can add our own function implementation in C++ to add new features to JavaScript.
+
+11.
+
+   libuv:
+
+   libuv is a multi-platform support library with a focus on asynchronous I/O.
+   Features
+   Full-featured event loop backed by epoll, kqueue, IOCP, event ports.
+
+   Asynchronous TCP and UDP sockets
+   Asynchronous DNS resolution
+   Asynchronous file and file system operations
+   File system events
+   Thread pool
+   Signal handling
+
+12.
+
+   event loop:
+
+   In an event-driven application, there is generally a main loop that listens for events, 
+   and then triggers a callback function when one of those events is detected.
+
+   Node.js is a single-threaded application, still it can supports concurrency via the concept of event and callbacks.
+
+   Node thread keeps an event loop and whenever a task gets completed,
+   it fires the corresponding event which signals the event-listener function to execute.
+
+13.
+
+   Non-blobcking io:
+
+   Non-blocking IO means an IO request is queued straight away and the function returns. 
+
+   The actual IO is then processed later.
+   Parallel programming, difficult to code, more control needed
+   Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
+
+   Node.js uses an event-driven, non-blocking I/O model
+
+14.
+
+   Differences between compiled and interpreted languages: 
+   Compiler:
+   a compiler will translate the program directly into code that is specific to the target machine,
+   which is also known as machine code – basically code that is specific to a given processor and operating system. 
+   Then the computer will run the machine code on its own.
+   A compiled language:
+   parse the program check for syntax errors, check for data types , 
+   verify the program semantically correct or not then translate the program in other language
+   Advantages:
+   The entire program is verified so there are no syntax or semantic errors;
+   faster execution:The executable file is optimized by the compiler so it execute faster;
+	
+	
+   Interpreter:
+   The program stop execution on first error.
+   Here source code is not directly run by the target machine. line by line compilation and error detecting happens here.
+   What happens instead is that another program reads and then executes the original source code. 
+   This other program is also known as the interpreter. 
+   Advantages:
+   You find errors before you finish the program.
+   Program can be executed before is finished so you gat partial results early;
+   You can see the results and you may decide to continue or not.
+   You can create small parts of the project and combine them later into a larger project therefore efficient.
+	
+
+15.
+	
+   MERN STACK:---
+   MERN Stack = Mongo DB + Express.js + React.js + Node.js,
+   MERN is the short form of all technologies which plays different roles in different stages 
+   while developing the applications.
+
+16.
+
+   Time and Space Complexities:
+   we mostly consider time complexity and space complexity for analysing efficiency of an algorithm.
+   Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input.
+   Similarly, Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.
+   Time and space complexity depends on lots of things like hardware, operating system, processors, etc.
+   Asymptotic analysis overcomes the problems of naive way of analyzing algorithms.we have 3 case:
+   1) Worst Case(O Big O Notation)upper bound on running time of an algorithm.
+   2) Average Case(theta notation)average bound on running time of an algorithm.
+   3) Best Case(W omega Notation)lower bound on running time of an algorithm.
+	
+17.
+
+    DATA STRUCTURES: organizing and accessing data in efficient manner.
+    a data structure is a data organization, management and storage format that enables efficient access and modification. 
+    More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
+    Data Structures are 2 types::--
+    Linear data structures                             Non Linear data stuctures
+    (sequential access)                                 (not sequential)
+	1. Arrays                                     1.Trees(graph with no loop)
+	2. Linked List (node pointer,data)            2.Graphs(collection of vertices and nodes)
+	3. Stack(last in first out)
+	4. Queue(first in first out)
+	
