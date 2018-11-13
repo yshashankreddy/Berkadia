@@ -1,0 +1,32 @@
+Callback Hell:
+-------------
+
+		Callback hell is a phenomenon that afflicts a JavaScript developer 
+		when he tries to execute multiple asynchronous operations one after the other.
+		-> Some people call it to be the pyramid of doom.
+
+
+Program to illustrate Callback hell:
+-----------------------------------
+
+function callbackhellexample() {
+  setTimeout(function() {
+    console.log('1');
+    setTimeout(function() {
+      console.log('2');
+       throw new Error;
+      setTimeout(function() {
+        console.log('3');
+        setTimeout(function() {
+          console.log('4');
+        }, 500);
+      }, 500);
+    }, 500);
+  }, 500);
+};
+callbackhellexample();
+
+OUTPUT:  1
+------   2
+	 3
+	 4
