@@ -1,0 +1,28 @@
+
+Async/Await :
+-----------
+		Asynchronous requests will wait for a timer to finish or a request to respond while the rest of the code continues to execute.
+		Then when the time is right a callback will spring these asynchronous requests into action.
+	        ->A couple of months ago async/await landed in V8, the JavaScript engine.
+		->await may only be used in functions marked with the async keyword. 
+		->If the awaited expression isn’t a promise, its casted into a promise.
+ 
+
+Program to illustrate Async/Await:
+---------------------------------
+
+function add(){ 
+a=6;
+return a;
+}
+async function getTrace () 
+{ 
+let Content 
+try { 
+Content = await add(); 
+} 
+catch (e) {
+ console.error(e);
+} 
+return Content 
+} getTrace() .then()
