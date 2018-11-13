@@ -1,0 +1,101 @@
+Modules:
+-------
+
+Module in Node.js is a simple or complex functionality organized in single or multiple JavaScript files .
+Each module in Node.js has its own context, so it cannot interfere with other modules.
+ Each module can be placed in a separate (.js )file under a separate folder.
+So that every module is reusable in Node.js.
+There are  three types of modules:
+1.Core Modules
+2.Local Modules
+3.Third Party Modules
+
+Core Modules:
+The following table lists some of the important core modules in Node.js.
+http, url, querystring, path, fs, util. 
+In order to use Node.js core or NPM modules, you first need to import it using require() function.
+var module=require(‘mod_name);
+
+Local Modules:
+Local modules are modules created locally in your Node.js application.
+ These modules include different functionalities of your application in separate files and folders.
+Create a module with name (name) and save it as name.js and export it.
+Var mymodule=require(‘./name.js’);
+
+Built-in-modules:
+----------------
+assert:
+Provides a set of assertion tests
+
+buffer:
+To handle binary data
+
+child_process:
+To run a child process
+
+cluster:
+To split a single Node process into multiple processes
+
+crypto:
+To handle OpenSSL cryptographic functions
+
+dgram:
+Provides implementation of UDP datagram sockets
+
+dns:
+To do DNS lookups and name resolution functions
+
+domain:
+deprecated. To handle unhandled errors
+
+events:
+To handle events
+
+fs:
+To handle the file system
+
+http:
+To make Node.js act as an HTTP server
+
+https:
+To make Node.js act as an HTTPS server.
+
+net:
+To create servers and clients
+
+os:
+Provides information about the operation system
+
+path:
+To handle file paths
+
+punycode:
+ Deprecated. A character encoding scheme
+
+querystring:
+To handle URL query strings
+
+readline:
+To handle readable streams one line at the time
+
+stream:
+To handle streaming data
+
+string_decoder:
+To decode buffer objects into strings
+
+timers:
+To execute a function after a given number of milliseconds
+
+tls:
+To implement TLS and SSL protocols
+
+tty:
+Provides classes used by a text terminal
+
+url:
+To parse URL strings
+util	To access utility functions
+v8	To access information about V8 (the JavaScript engine)
+vm	To compile JavaScript code in a virtual machine
+zlib	To compress or decompress files
