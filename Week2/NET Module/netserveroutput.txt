@@ -1,0 +1,4 @@
+C:\Users\SHASHANK\Desktop\week2>node netserver.js
+server is listening
+client connected
+client disconnected
