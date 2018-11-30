@@ -1,0 +1,84 @@
+Creating objects in JavaScript:
+------------------------------
+
+
+                               There are 3 different ways to create objects in javascript.
+                               1.Using functions as class
+			       2.Using object literals
+			       3.Singleton using a function
+          
+1.Using functions as class:
+--------------------------
+                             Here we define a classical JavaScript function and create an object of the function using 'new' keyword.
+                             The properties and methods of function are created using the this keyword.
+
+Program:
+-------
+        <script> 
+	function Student(name, id) { 
+		this.name = name; 
+		this.id = id; 
+		this.display = function() { 
+			console.log(this.name); 
+			console.log(this.id); 
+		} 
+	} 
+        //creating object using new keyword
+        var obj = new Student("Shashank", 16); 
+	obj.display(); 
+        </script> 
+OUTPUT: Shashank
+------  16
+
+
+2.Using object literals:
+-----------------------
+                          Literals are smaller and simpler ways to define objects.
+
+Program:
+-------
+         <script> 
+	// Creating Object using literal 
+	var obj = { 
+		name : "", 
+		id : "", 
+		display : function() { 
+			console.log(this.name); 
+			console.log(this.id); 
+		} 
+	} 
+        obj.name = "Shashank"; 
+        obj.id = 16; 
+	obj.display(); 
+	</script> 
+OUTPUT: Shashank
+------  16
+
+
+3.Singleton using a function:
+----------------------------
+
+			      We can use a function to define a singleton object.
+
+Program:
+-------
+         <script> 
+	// Creating singleton object. 
+	var obj = new function() { 
+		this.name = ""; 
+		this.id = ""; 
+		this.display = function() { 
+			console.log(this.name); 
+			console.log(this.id); 
+		}; 
+	} 
+	obj.name = "Shashank"; 
+	obj.age = 16; 
+	obj.display(); 
+	</script> 
+OUTPUT: Shashank
+------  16
+
+
+
+
