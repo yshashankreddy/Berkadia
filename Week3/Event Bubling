@@ -1,0 +1,11 @@
+EVENT BUBBLING:
+-------------
+
+Event bubbling, which refers to the ability of events set on DOM nodes to “bubble up” and also apply to children of those nodes.
+ Many people question why more attention isn’t paid to the capturing phase. 
+ Simply put, it’s unlikely that you’ll have to use it. 
+ IE < 9 uses only event bubbling, whereas IE9+ and all major browsers support both.
+
+Legend has it that back in the day, Netscape Navigator and Internet Explorer had different, incompatible ways of propagating events to multiple handlers.
+Netscape “captured” while Internet Explorer “bubbled.” W3C has very sensibly decided to take a middle position in this dispute. 
+According to the W3C event model, any event taking place is first captured until it reaches the target element… and then bubbles up again.
