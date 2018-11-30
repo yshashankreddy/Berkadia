@@ -18,3 +18,8 @@ class Student extends Person {
 }  
 var Student_1 = new Student("Shashank", "16"); 
 console.log(Student_1.toString()); 
+
+/*OUTPUT:  
+C:\Users\SHASHANK\Desktop\week3\my-app>node obj.js
+Name of person = Shashank, Student Id = 16*/
+
