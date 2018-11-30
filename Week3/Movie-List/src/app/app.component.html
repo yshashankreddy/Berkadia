@@ -1,0 +1,22 @@
+<div class="gallery">
+  <div class="thumb" *ngFor="let thumb of galleryData" (click)="getFullDetialsOfMovie(thumb.id)">
+    <div class="title">
+      <span>{{ thumb['title']}}</span>
+      <p class="popiularity"> &#10084; {{ thumb['vote_average']}}</p>
+      <span class="overview">{{ thumb['overview']}}</span>
+    </div>
+    <img [src]="thumb['backdrop_path']" alt="thumb['title']">
+  </div>
+</div>
+
+<div class="overlay" *ngIf="fullMovieDetials">
+  <div class="modal">
+     <table>
+       <tr><td colspan="2"><button (click)="close()" style="float:right;background-color:red;color:white;">&times;</button></td></tr>
+       <tr><td colspan="2"><img src="{{ fullMovieDetials.backdrop_path }}" width="100%" height="300px" ></td></tr>
+       <tr><td>Title : </td><td>{{fullMovieDetials.title}}</td></tr>
+       <tr><td>Description : </td><td>{{fullMovieDetials.overview}}</td></tr>
+       <tr><td>Released Date : </td><td>{{fullMovieDetials.release_date}}</td></tr>
+     </table>
+  </div>
+</div>
