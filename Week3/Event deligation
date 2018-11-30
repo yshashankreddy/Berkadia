@@ -1,0 +1,21 @@
+EVENT DELEGATION:
+----------------
+In event delegation, we take advantage of the fact that events bubble in the event loops by setting an event listener on one parent. 
+This event listener analyzes bubbled events to find a match in its child elements.
+Event delegation is one of the most helpful patterns for DOM events.
+It simplifies things and can save memory since there is no need to add many handlers.
+
+The algorithim:
+
+Put a single handler on a container
+In the handler - check the source element using event.target
+If the event happened inside an element that interests us, then handle the event
+
+EXAMPLE:
+-------
+
+document.querySelector('body').addEventListener('click', function(event) {
+  if (event.target.tagName.toLowerCase() === 'li') {
+    // do your action on your 'li' or whatever it is you're listening for
+  }
+});
