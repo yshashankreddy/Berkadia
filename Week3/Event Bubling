@@ -9,3 +9,21 @@ Event bubbling, which refers to the ability of events set on DOM nodes to “bub
 Legend has it that back in the day, Netscape Navigator and Internet Explorer had different, incompatible ways of propagating events to multiple handlers.
 Netscape “captured” while Internet Explorer “bubbled.” W3C has very sensibly decided to take a middle position in this dispute. 
 According to the W3C event model, any event taking place is first captured until it reaches the target element… and then bubbles up again.
+
+EXAMPLE:
+.HTML
+----------
+<section class="container">
+  <div class="grandparent">
+    <div class="parent">
+      <button class="button" id="click-me">Click me!</button>
+    </div>
+  </div>
+</section>
+
+.JS
+---
+
+document.querySelector('.grandparent');
+document.querySelector('.parent');
+document.querySelector('#click-me');
