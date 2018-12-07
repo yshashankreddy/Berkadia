@@ -1,0 +1,10 @@
+<table id="vegetables" style="text-align:center">
+  <tr>
+    <th>Vegetables</th>
+    <th>Add To Basket</th>
+  </tr>
+  <tr *ngFor="let i of vegetables">
+      <td>{{i}}</td>
+      <td><button class="button button1" (click)="counter()">Buy This</button></td>
+  </tr> 
+</table>
