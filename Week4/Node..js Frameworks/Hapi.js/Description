@@ -1,0 +1,27 @@
+Hapi.js :
+-------
+
+           Hapi.js is a powerful Node.js web framework for building application program interfaces (APIs) and other software applications. 
+The framework has a robust plugin system and numerous key features, including input validation, configuration-based functionality, 
+implement caching, error handling,logging and more.
+
+           Hapi.js is used for designing useful applications, such as Postmile, a collaborative list making tool. 
+Besides, it is used for providing technology solutions by several large-scale websites, such as Disney, Concrete, PayPal, Walmart and more.
+
+
+Program:
+-------
+
+var server=new hapi.Server();
+server.connection({port:1998});
+server.route([{
+   method:'GET',
+  path:'/',
+handler:function(request,reply){
+reply("Hello world from hapi");
+} 
+}])
+server.start((err)=>
+{
+ console.log("Hapi is listening to localhost:1998");
+})
