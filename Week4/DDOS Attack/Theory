@@ -1,0 +1,31 @@
+DDOS Attack:
+-----------
+
+                       A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt normal traffic of a targeted server,
+ service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic. 
+                         DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of attack traffic. 
+ Exploited machines can include computers and other networked resources such as IoT devices. From a high level, a DDoS attack is like a 
+ traffic jam clogging up with highway, preventing regular traffic from arriving at its desired destination.
+ 
+ TYPES:
+ -----
+ 
+ 1.Application Layer Attacks:
+ ----------------------------
+                         Sometimes referred to as a layer 7 DDoS attack (in reference to the 7th layer of the OSI model), the goal of these 
+  attacks is to exhaust the resources of the target. The attacks target the layer where web pages are generated on the server and delivered
+  in response to HTTP requests. A single HTTP request is cheap to execute on the client side, and can be expensive for the target server to
+  respond to as the server often must load multiple files and run database queries in order to create a web page. Layer 7 attacks are 
+  difficult to defend as the traffic can be difficult to flag as malicious.
+  
+  2.Protocol Attacks:
+  -------------------
+                       Protocol attacks, also known as a state-exhaustion attacks, cause a service disruption by consuming all the available
+state table capacity of web application servers or intermediate resources like firewalls and load balancers. Protocol attacks utilize weaknesses in layer 3 and
+layer 4 of the protocol stack to render the target inaccessible.
+
+3.Volumetric Attacks:
+---------------------
+                        This category of attacks attempts to create congestion by consuming all available bandwidth between the target and 
+the larger Internet. Large amounts of data are sent to a target by using a form of amplification or another means of creating massive 
+traffic, such as requests from a botnet.
