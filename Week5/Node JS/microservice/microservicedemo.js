@@ -12,5 +12,5 @@ module.exports = function (request, response) {
     visits[pathname] = 1
   }
 
-  send(response, 200, `This page has ${visits[pathname]} visits!`)
+  send(response, 200, `Page has ${visits[pathname]} visits!`)
 }
