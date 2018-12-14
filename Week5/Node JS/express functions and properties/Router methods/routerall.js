@@ -1,8 +1,9 @@
 let express=require('express');
 let router=express.Router();
+let app=express();
 
 router.all('/',(req,res)=>{
     res.send("router methods");
 });
 
-module.exports=router;
+app.listen(3000);
