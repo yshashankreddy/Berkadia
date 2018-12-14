@@ -2,15 +2,22 @@ DIFFERENCES BETWEEN
 
 Monolithic Architecture                                          |                   Microservices based Architecture
 ----------------------                                           |                 -------------------------------
-Gets bigger and bigger over iterations, and becomes              |                 The size will remain substantially smaller,
-difficult to manage and takes really long to startup,            |                  as each component is dissected to smaller services.
-if the application is too big.
-
-Continues deployment becomes difficult, as a small                                 Continues deployment is possible here, as
-change to a component in the application, requires                                 each service can be deployed independent of each other.
-
-Scaling of application requires entire application                                 Scaling of individual component is possible here,
-scaling(ie: to launch multiple instances of the big                                as each different component is de-coupled 
-monolithic application to serve the need), even                                    to different services, and can be scaled up 
-though only one small part of the application is                                    horizontally and individually.    
-resource intensive.
+microservice architecture is nothing but an                      |                Monolithic applications are built as a
+approach to application development, where an                    |                single package, that has all required
+application is dissected to different components,                |                components are services included.
+and each application components are developed individually,      |
+packaged individually, and deployed individually, in             |
+individual processes.                                            |
+                                                                 |
+Gets bigger and bigger over iterations, and becomes              |                The size will remain substantially smaller,
+difficult to manage and takes really long to startup,            |                as each component is dissected to smaller services.
+if the application is too big.                                   |
+                                                                 |
+Continues deployment becomes difficult, as a small               |                 Continues deployment is possible here, as
+change to a component in the application, requires               |                 each service can be deployed independent of each other.
+                                                                 |
+Scaling of application requires entire application               |                 Scaling of individual component is possible here,
+scaling(ie: to launch multiple instances of the big              |                 as each different component is de-coupled 
+monolithic application to serve the need), even                  |                 to different services, and can be scaled up 
+though only one small part of the application is                 |                 horizontally and individually.    
+resource intensive.                                              |
