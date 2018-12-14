@@ -2,12 +2,12 @@ DIFFERENCES BETWEEN
 
 Monolithic Architecture                                          |                   Microservices based Architecture
 ----------------------                                           |                 -------------------------------
-microservice architecture is nothing but an                      |                Monolithic applications are built as a
-approach to application development, where an                    |                single package, that has all required
-application is dissected to different components,                |                components are services included.
-and each application components are developed individually,      |
-packaged individually, and deployed individually, in             |
-individual processes.                                            |
+ Monolithic applications are built as a                          |                microservice architecture is nothing but an                                      
+ single package, that has all required components                |                approach to application development, where an                                    
+  are services included.                                         |                application is dissected to different components,                             
+                                                                 |                and each application components are developed individually,      
+                                                                 |                packaged individually, and deployed individually, in             
+                                                                 |                individual processes.                                            
                                                                  |
 Gets bigger and bigger over iterations, and becomes              |                The size will remain substantially smaller,
 difficult to manage and takes really long to startup,            |                as each component is dissected to smaller services.
