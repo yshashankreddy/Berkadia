@@ -1,0 +1,63 @@
+ docker images:
+ -------------
+
+This command lists all the locally stored docker images.
+
+Command:
+-------
+
+
+C:\Users\SHASHANK\Desktop\docker>docker images
+REPOSITORY                  TAG                 IMAGE ID
+   CREATED             SIZE
+shashanky                   latest              52d01ad4d991
+   5 minutes ago       685MB
+shashankpy                  latest              52d01ad4d991
+   5 minutes ago       685MB
+sample                      latest              bc7f802081f9
+   46 hours ago        685MB
+<none>                      <none>              9ae4bb473eaa
+   7 days ago          655MB
+hello-app                   v1                  4dff54e716fb
+   7 days ago          655MB
+hello-app                   x1                  eeb7122e5752
+   7 days ago          655MB
+<none>                      <none>              f80540890289
+   7 days ago          655MB
+<none>                      <none>              2c4e73df27d4
+   7 days ago          655MB
+<none>                      <none>              08b1a9ec1027
+   7 days ago          655MB
+<none>                      <none>              bba5a4f24dfa
+   7 days ago          655MB
+<none>                      <none>              5b00170be3a7
+   7 days ago          655MB
+<none>                      <none>              4faefcd4991a
+   7 days ago          655MB
+shashanknode                latest              463fadefccef
+   2 weeks ago         889MB
+<none>                      <none>              e1fe473815cc
+   2 weeks ago         889MB
+shashanknode/node-web-app   latest              8b8a5fec56b5
+   2 weeks ago         889MB
+shashi                      latest              8b8a5fec56b5
+   2 weeks ago         889MB
+shashinode                  latest              8b8a5fec56b5
+   2 weeks ago         889MB
+<none>                      <none>              386345ab8f3e
+   2 weeks ago         889MB
+<none>                      <none>              bd5534ef3f89
+   2 weeks ago         889MB
+test                        latest              bef5c8f833b5
+   2 weeks ago         685MB
+shashank                    latest              bef5c8f833b5
+   2 weeks ago         685MB
+node                        8                   3b7ecd51ffe5
+   3 weeks ago         889MB
+hello-world                 latest              4ab4c602aa5e
+   3 months ago        1.84kB
+python                      2.7-onbuild         3f246dd60a17
+   5 months ago        685MB
+node                        6.9.2               faaadb4aaf9b
+   2 years ago         655MB
+
