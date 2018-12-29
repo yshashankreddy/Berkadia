@@ -1,0 +1,12 @@
+docker –version:
+---------------
+
+This command is used to get the currently installed version of docker
+
+
+Command:
+-------
+
+
+C:\Users\SHASHANK\Desktop\docker>docker --version
+Docker version 18.03.0-ce, build 0520e24302
