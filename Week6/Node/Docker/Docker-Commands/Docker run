@@ -1,0 +1,11 @@
+Docker Run:
+----------
+
+This command is used to create a container from an image and Run a command in a new container.
+
+
+Command:  
+-------
+
+C:\Users\SHASHANK\Desktop\docker>docker run shashankpy
+Python execution using Docker
