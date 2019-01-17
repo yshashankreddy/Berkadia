@@ -1,0 +1,19 @@
+table{
+
+}
+thead{
+    font-size: 24px;
+    background-color: green
+}
+th{
+    padding:20px;
+    font-size: 23px;
+}
+td{
+    padding:20px;
+    font-size: 22px;
+}
+
+tbody{
+    background: rgba(0, 255, 0, 0.5);
+}
